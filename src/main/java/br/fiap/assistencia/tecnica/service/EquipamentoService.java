@@ -7,10 +7,12 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class EquipamentoService {
+    private final ClienteRepository Clienterepository;
     private final EquipamentoRepository repository;
 
     //CONSTRUROR (para inicializar a variavel)
-    public EquipamentoService(EquipamentoRepository repository) {
+    public EquipamentoService(ClienteRepository clienterepository, EquipamentoRepository repository) {
+        Clienterepository = clienterepository;
         this.repository = repository;
     }
 
