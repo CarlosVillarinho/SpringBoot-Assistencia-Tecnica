@@ -19,7 +19,7 @@ public class Equipamento {
     @Column(name = "ID_EQUIP")
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY) //DIGO A RELAÇAO ENTRE 'EQUIPAMENTOS' E 'CLIENTE' (muito para um)
+    @ManyToOne(fetch = FetchType.EAGER) //DIGO A RELAÇAO ENTRE 'EQUIPAMENTOS' E 'CLIENTE' (muito para um)
     @JoinColumn(name = "ID_CLIENTE", foreignKey = @ForeignKey(name = "FK_EQUIP_CLIENTE")) //JUNTA AS DUAS TABELAS 'JAVA_EQUIPAMENTO' COM 'JAVA_CLIENTE'
     private Cliente cliente;
 

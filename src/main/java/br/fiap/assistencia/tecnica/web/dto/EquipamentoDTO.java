@@ -10,7 +10,7 @@ import java.time.LocalDate;
 public class EquipamentoDTO {
     //ATRIBUTOS
     private Long id;
-    private long Idcliente;
+    private long idCliente;
     private String tipo, marca, modelo, numeroSerie;
     private LocalDate dataCadastro;
 }
